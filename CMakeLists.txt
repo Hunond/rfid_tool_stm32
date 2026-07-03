@@ -44,13 +44,14 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    Core/Src/MFRC522_STM32.c
     # Add user sources here
+    Core/Src/MFRC522_STM32.c
+    Core/Src/w25qxx.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
-    Core/Inc/MFRC522_STM32.h
+    Core/Inc
     # Add user defined include paths
 )
 
